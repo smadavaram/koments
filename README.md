@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -23,3 +24,7 @@ Things you may want to cover:
 
 * ...
 # dit
+=======
+# koments
+>>>>>>> 79b59e7da97e136e7d659fd9628035c78d8041b5
+# komments
