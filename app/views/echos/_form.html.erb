@@ -1,0 +1,27 @@
+<%= form_with(model: echo, local: true) do |form| %>
+  <% if echo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(echo.errors.count, "error") %> prohibited this echo from being saved:</h2>
+
+      <ul>
+      <% echo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :headline %>
+    <%= form.text_field :headline, id: :echo_headline %>
+  </div>
+
+  <div class="field">
+    <%= form.label :body %>
+    <%= form.text_area :body, id: :echo_body %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

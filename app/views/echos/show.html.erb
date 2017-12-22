@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Headline:</strong>
+  <%= @echo.headline %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @echo.body %>
+</p>
+
+<%= render partial: "comments/template", locals: {commentable: @echo, new_comment: @comment} %>
+
+<%= link_to 'Edit', edit_echo_path(@echo) %> |
+<%= link_to 'Back', echos_path %>
